@@ -11,6 +11,7 @@ function App() {
 
     setFullName((prevValue) => {
       //never use Synthetic events inside setValue functions in hooks
+      //hold them in a var then use
       if (name === "fName") {
         return {
           fName: value,
